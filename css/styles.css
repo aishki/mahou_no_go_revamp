@@ -1,232 +1,419 @@
 @font-face {
     font-family: Montserrat;
-    src: url("Montserrat/static/Montserrat.ttf");
-    }
+    src: url("../assets/font/Montserrat/static/Montserrat-Regular.ttf");
+}
 
 @font-face {
     font-family: Montserrat_Bold;
-    src: url("Montserrat/static/Montserrat-Bold.ttf");
-    }
+    src: url("../assets/font/Montserrat/static/Montserrat-Bold.ttf");
+}
 
 @font-face {
     font-family: Montserrat_XBold;
-    src: url("Montserrat/static/Montserrat-ExtraBold.ttf");
-    }
+    src: url("../assets/font/Montserrat/static/Montserrat-ExtraBold.ttf");
+}
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 /* SCROLL BAR EDITS */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #888;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #C53338;
-    }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C53338;
+}
 
 /*BG for Each Page*/
-    .bgHome{
-        background-color: #fffceb;
-    }
+.bgHome {
+    background-color: #fffceb;
+}
 
 /* Home - Section 1 Waves Animation Banner */
 
-    .waves{
-        height: 100vh;
-        background-size: cover;
-        background-position:center center;
-        background-attachment: fixed;
+.waves {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Title Banner */
+.BannerTitle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left: 7%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    align-items: center;
+    color: #C53338;
+    text-transform: uppercase;
+    z-index: 11;
+}
+
+.BannerTitle img {
+    width: 30vw;
+}
+
+.subtitle {
+    width: 30vw;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+/* Clouds CSS */
+.BannerContainer {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* KEYFRAMES */
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -500px;
     }
 
-    /* Title Banner */
-    .BannerTitle{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 20%;
-        left: 7%;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 900;
-        align-items: center;
-        color: #C53338;
-        text-transform: uppercase;
-        z-index: 11;
+    100% {
+        margin-left: 100%;
     }
-        .BannerTitle img{
-            width: 30vw;
-        }
-    
-    .subtitle {
-        width: 30vw;
-        font-size: 1vw;
-        margin-top: 10px;
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -500px;
     }
 
-    /* Clouds CSS */
-        .BannerContainer {
-            position: relative;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        #background-wrap {
-            bottom: 0;
-            left: 0;
-            padding-top: 50px;
-            right: 0;
-            top: 0;
-            height: 100vh;
-            z-index: -1;
-        }
-        
-    /* KEYFRAMES */
-        @-webkit-keyframes animateCloud {
-            0% {
-                margin-left: -1000px;
-            }
-            100% {
-                margin-left: 100%;
-            }
-        }
-        
-        @-moz-keyframes animateCloud {
-            0% {
-                margin-left: -1000px;
-            }
-            100% {
-                margin-left: 100%;
-            }
-        }
-        
-        @keyframes animateCloud {
-            0% {
-                margin-left: -1000px;
-            }
-            100% {
-                margin-left: 100%;
-            }
-        }
-        
-    /* CLOUD ANIMATIONS */   
-        .x1 {
-            top: 5%;
-            -webkit-animation: animateCloud 30s linear infinite;
-            -moz-animation: animateCloud 30s linear infinite;
-            animation: animateCloud 30s linear infinite;   
-        }
-        
-        .x2 {
-            top: 30%;
-            -webkit-animation: animateCloud 40s linear infinite;
-            -moz-animation: animateCloud 40s linear infinite;
-            animation: animateCloud 40s linear infinite;
+    100% {
+        margin-left: 100%;
+    }
+}
 
-            -webkit-transform: scale(0.7);
-            -moz-transform: scale(0.7);
-            transform: scale(0.7);
-        }
-        
-        .x3 {
-            top: 35%;
-            -webkit-animation: animateCloud 25s linear infinite;
-            -moz-animation: animateCloud 25s linear infinite;
-            animation: animateCloud 25s linear infinite;
-        }
-        
-        .x4 {
-            top: 50%;
-            -webkit-animation: animateCloud 18s linear infinite;
-            -moz-animation: animateCloud 18s linear infinite;
-            animation: animateCloud 18s linear infinite;
+@keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
 
-            -webkit-transform: scale(0.6);
-            -moz-transform: scale(0.6);
-            transform: scale(0.6);
-        }
-        
-    /* OBJECTS */
-        .cloud {
-            height: auto;
-            position: relative;
-        }
-        
-        .cloud:after, .cloud:before {
-            content: '';
-            position: absolute;
-            z-indeX: -1;
-        }
-        
+    100% {
+        margin-left: 100%;
+    }
+}
 
-    /* END OF CLOUDS */
+/* CLOUD ANIMATIONS */
+.x1 {
+    top: 5%;
+    -webkit-animation: animateCloud 30s linear infinite;
+    -moz-animation: animateCloud 30s linear infinite;
+    animation: animateCloud 30s linear infinite;
+}
+
+.x2 {
+    top: 30%;
+    -webkit-animation: animateCloud 40s linear infinite;
+    -moz-animation: animateCloud 40s linear infinite;
+    animation: animateCloud 40s linear infinite;
+
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.x3 {
+    top: 35%;
+    -webkit-animation: animateCloud 25s linear infinite;
+    -moz-animation: animateCloud 25s linear infinite;
+    animation: animateCloud 25s linear infinite;
+}
+
+.x4 {
+    top: 50%;
+    -webkit-animation: animateCloud 18s linear infinite;
+    -moz-animation: animateCloud 18s linear infinite;
+    animation: animateCloud 18s linear infinite;
+
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+/* OBJECTS */
+.cloud {
+    height: auto;
+    position: relative;
+}
+
+.cloud:after, .cloud:before {
+    content: '';
+    position: absolute;
+    z-indeX: -1;
+}
+
+
+/* END OF CLOUDS */
 
 /* RISING SUN ANIMATION */
-    .redsun {
-        position: absolute;
-        top: 100px; 
-        right: 50px; 
-        z-index: 2;
-        animation: riseFall 5s ease-in-out infinite; 
-        width: 600px;
-        height: 600px; 
+.redsun {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    z-index: 2;
+    animation: riseFall 5s ease-in-out infinite;
+    width: 600px;
+    height: 600px;
+}
+
+/* Clouds behind the sun */
+.x1, .x2 {
+    position: absolute;
+    z-index: 3;
+}
+
+/* Clouds in front of the sun */
+.x3, .x4 {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Sun's Rrising and Falling */
+
+@keyframes riseFall {
+    0%, 100% {
+        transform: translateY(0px);
+        /* Starting and ending position */
     }
 
-    /* Clouds behind the sun */
-    .x1, .x2 {
-        position: absolute;
-        z-index: 3;
+    50% {
+        transform: translateY(-20px);
+        /* Peak height */
     }
-    
-    /* Clouds in front of the sun */
-    .x3, .x4 {
-        position: absolute;
-        z-index: 1;
-    }
-    
-    /* Sun's Rrising and Falling */
-
-    @keyframes riseFall {
-        0%, 100% {
-        transform: translateY(0px); /* Starting and ending position */
-        }
-        50% {
-        transform: translateY(-20px); /* Peak height */
-        }
-    }
+}
 
 /* BIG WAVES ANIMATION */
 .bigwave {
     position: absolute;
     z-index: 10;
-    width: 200%;  
+    width: 200%;
     height: auto;
-    display: flex; 
+    display: flex;
     bottom: -60px;
     animation: moveLeft 10s linear infinite;
 }
 
-.wave_img {
-    width: 50%; 
-    height: auto;
+/* para ndi kitaon :(( */
+.bigwave2 {
+    transform: translateX(-0.75px);
 }
+
 
 @keyframes moveLeft {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
 }
 
-    
+/* HomePage Content */
+.homepage-content {
+    border-top: 10px solid #C53338;
+    background-image: url("../assets/gen/bgpattern.png");
+    background-repeat: repeat;
+}
+
+.homepage-content .title {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.homepage-content p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon {
+    color: #C53338;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/* Featured Section */
+.featured-section {
+    max-width: 90%;
+    margin: 9vh auto;
+    padding: 0 30px;
+}
+
+.featured-title {
+    position: relative;
+    height: 1.8em;
+    font-size: 4vw;
+    font-weight: 900;
+    color: #C53338;
+}
+
+/* Product Container */
+.product-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.product-box {
+    height: auto;
+    padding: 15px;
+    border: 10px solid #fffceb;
+    outline: 2px solid #C53338;
+    outline-offset: -10px;
+    flex: 1;
+    transition: flex 1s ease, background-color 1s ease;
+    cursor: pointer;
+    position: relative;
+    background-color: #fffceb;
+}
+
+.product-box:hover {
+    flex: 70%;
+    background-color: #C53338;
+}
+
+/* Hide all classes that start with "featured-item" */
+[class^="featured-item"] {
+    display: none;
+}
+
+.product-description {
+    height: 200px;
+}
+
+.product-description h2 {
+    position: relative;
+    font-weight: 800;
+    font-size: 2.5vw;
+    line-height: 78px;
+    color: #C53338;
+}
+
+.product-description p {
+    position: relative;
+    font-weight: 500;
+    font-size: .9vw;
+    padding-top: 2vh;
+    line-height: 20px;
+    color: #C53338;
+    text-align: justify;
+}
+
+/* Featured Info Container */
+.featured-info-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Inner images default style */
+.product-box .product-image-1,
+.product-box .product-image-2,
+.product-box .product-image-3,
+.product-box .product-image-4,
+.product-box .product-image-5 {
+    height: 354px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Product Image Hover Effects */
+.product-image-1 {
+    background-image: url("../assets/food/Featured/S1.png");
+}
+
+.product-image-1:hover {
+    background-image: url("../assets/food/Featured/Box\ 1.gif");
+}
+
+.product-image-2 {
+    background-image: url("../assets/food/Featured/S2.jpg");
+}
+
+.product-image-2:hover {
+    background-image: url("../assets/food/Featured/Box\ 2.gif");
+}
+
+.product-image-3 {
+    background-image: url("../assets/food/Featured/S3.png");
+}
+
+.product-image-3:hover {
+    background-image: url("../assets/food/Featured/Box\ 3.gif");
+}
+
+.product-image-4 {
+    background-image: url("../assets/food/Featured/S4.png");
+}
+
+.product-image-4:hover {
+    background-image: url("../assets/food/Featured/Box\ 4.gif");
+}
+
+.product-image-5 {
+    background-image: url("../assets/food/Featured/S5.png");
+}
+
+.product-image-5:hover {
+    background-image: url("../assets/food/Featured/Box\ 5.gif");
+}
+
+/* Hide class for fading */
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Make sure visible elements fade in smoothly */
+.ContainerFeatured .featured,
+.ContainerFeatured .intfeatured {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
