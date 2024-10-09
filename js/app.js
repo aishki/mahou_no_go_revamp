@@ -22,7 +22,7 @@ productBoxes.forEach((box, index) => {
       if (otherIndex !== index) {
         otherImage.style.opacity = "0"; // Fade out
       } else {
-        otherImage.style.opacity = "1"; // Keep hovered image visible
+        otherImage.style.opacity = "1";
       }
     });
 
@@ -36,7 +36,7 @@ productBoxes.forEach((box, index) => {
     // Show and fade in the corresponding featured description
     const currentItem = document.querySelector(currentItemClass);
     if (currentItem) {
-      currentItem.style.display = "block"; // Display the correct description
+      currentItem.style.display = "block"; 
       setTimeout(() => {
         currentItem.style.opacity = "1"; // Fade in the description
       }, 50);
