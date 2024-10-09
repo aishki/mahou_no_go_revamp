@@ -1,16 +1,22 @@
 @font-face {
-    font-family: Montserrat;
-    src: url("../assets/font/Montserrat/static/Montserrat-Regular.ttf");
+    font-family: 'Geist';
+    src: url('../assets/font/Geist/Geist-ExtraBold.woff2');
+    font-weight: 800;
+    font-style: extrabold;
 }
 
 @font-face {
-    font-family: Montserrat_Bold;
-    src: url("../assets/font/Montserrat/static/Montserrat-Bold.ttf");
+    font-family: 'Geist';
+    src: url('../assets/font/Geist/Geist-Medium.woff2');
+    font-weight: 500;
+    font-style: medium;
 }
 
 @font-face {
-    font-family: Montserrat_XBold;
-    src: url("../assets/font/Montserrat/static/Montserrat-ExtraBold.ttf");
+    font-family: 'Geist';
+    src: url('../assets/font/Geist/Geist-Light.woff2');
+    font-weight: 300;
+    font-style: light;
 }
 
 * {
@@ -55,7 +61,7 @@
     flex-direction: column;
     top: 20%;
     left: 7%;
-    font-family: 'Montserrat';
+    font-family: 'Geist';
     font-style: normal;
     font-weight: 900;
     align-items: center;
@@ -69,6 +75,8 @@
 }
 
 .subtitle {
+    font-family: 'Geist';
+    font-weight: 800;
     width: 30vw;
     font-size: 1vw;
     margin-top: 10px;
@@ -238,6 +246,12 @@
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* BG Tint */
+.background-tint {
+    background-color: rgba(255, 238, 205, 0.625);
+    background-blend-mode: multiply;
 }
 
 /* HomePage Content */
@@ -416,4 +430,48 @@
     opacity: 1;
     visibility: visible;
     transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* motto-section */
+.motto {
+    font-size: 85px;
+    font-family: 'Geist';
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 99px;
+    word-wrap: break-word;
+}
+
+.r-stroke {
+    -webkit-text-stroke: #C53338 2px;
+    paint-order: stroke fill;
+    color: transparent;
+}
+
+.r-fill {
+    color: #C53338;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Container for positioning the SVG */
+.position-container {
+    position: relative;
+    /* This allows positioning the SVG relative to the text */
+}
+
+/* Position the SVG above the letter "R" */
+.positioned-svg {
+    position: absolute;
+    left: 0;
+    /* Adjust this to center the SVG over the "R" */
+    top: -15px;
+    /* Move the SVG above the text */
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+    transform: translateX(-30px);
+    /* Fine-tune this for horizontal alignment */
 }
