@@ -486,7 +486,6 @@ body {
     position: relative;
 }
 
-/* Position the SVG above the letter "R" */
 .positioned-svg {
     position: absolute;
     left: 9px;
