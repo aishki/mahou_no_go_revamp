@@ -24,7 +24,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+}
+
+body {
+    background-image: url("../assets/gen/bgpattern.png");
+    background-repeat: repeat;
 }
 
 /* SCROLL BAR EDITS */
@@ -48,11 +52,17 @@
 /* Home - Section 1 Waves Animation Banner */
 
 .waves {
+    background-color: #fffceb;
     height: 100vh;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
+
+.waves * {
+    overflow-x: hidden;
+}
+
 
 /* Title Banner */
 .BannerTitle {
@@ -76,10 +86,11 @@
 
 .subtitle {
     font-family: 'Geist';
-    font-weight: 800;
+    font-weight: 900;
     width: 30vw;
-    font-size: 1vw;
+    font-size: 1.1rem;
     margin-top: 10px;
+    -webkit-text-stroke: #fffceb 0.2px;
 }
 
 /* Clouds CSS */
@@ -257,8 +268,6 @@
 /* HomePage Content */
 .homepage-content {
     border-top: 10px solid #C53338;
-    background-image: url("../assets/gen/bgpattern.png");
-    background-repeat: repeat;
 }
 
 .homepage-content .title {
@@ -286,6 +295,7 @@
 
 /* Featured Section */
 .featured-section {
+    height: 100vh;
     max-width: 90%;
     margin: 9vh auto;
     padding: 0 30px;
@@ -433,12 +443,27 @@
 }
 
 /* motto-section */
+.motto-section {
+    height: 100vh;
+    width: 80%;
+    text-align: end;
+    margin: 9vh auto;
+    padding: 0 80px;
+
+}
+
+/* Grouping each set of lines */
+.motto-group {
+    margin-bottom: 15px;
+    display: block;
+}
+
 .motto {
-    font-size: 85px;
-    font-family: 'Geist';
-    font-weight: 900;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
-    line-height: 99px;
+    line-height: 65px;
     word-wrap: break-word;
 }
 
@@ -453,25 +478,20 @@
 }
 
 .italic {
+    font-weight: 900;
     font-style: italic;
 }
 
-/* Container for positioning the SVG */
 .position-container {
     position: relative;
-    /* This allows positioning the SVG relative to the text */
 }
 
 /* Position the SVG above the letter "R" */
 .positioned-svg {
     position: absolute;
-    left: 0;
-    /* Adjust this to center the SVG over the "R" */
-    top: -15px;
-    /* Move the SVG above the text */
-    width: 50px;
-    /* Adjust size as needed */
+    left: 9px;
+    top: -65px;
+    width: 100px;
     height: auto;
-    transform: translateX(-30px);
-    /* Fine-tune this for horizontal alignment */
+    transform: translateX(30px);
 }
