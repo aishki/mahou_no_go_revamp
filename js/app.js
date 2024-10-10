@@ -1,4 +1,3 @@
-// Select all product boxes and the default description
 const productBoxes = document.querySelectorAll(".product-box");
 const defaultDescription = document.querySelector(".featured-description");
 const featuredItems = document.querySelectorAll('[class^="featured-item"]');
@@ -36,7 +35,7 @@ productBoxes.forEach((box, index) => {
     // Show and fade in the corresponding featured description
     const currentItem = document.querySelector(currentItemClass);
     if (currentItem) {
-      currentItem.style.display = "block"; 
+      currentItem.style.display = "block";
       setTimeout(() => {
         currentItem.style.opacity = "1"; // Fade in the description
       }, 50);
