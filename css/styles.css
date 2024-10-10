@@ -111,8 +111,7 @@
 /*END NAVBAR*/
 
 body {
-    background-image: url("../assets/gen/bgpattern.png");
-    background-repeat: repeat;
+    background-color: #fffceb;
 }
 
 /* SCROLL BAR EDITS */
@@ -130,6 +129,11 @@ body {
 
 /*BG for Each Page*/
 .bgHome {
+    background-image: url("../assets/gen/bgpattern.png");
+    background-repeat: repeat;
+}
+
+.bgServices {
     background-color: #fffceb;
 }
 
@@ -572,7 +576,7 @@ body {
 .positioned-svg {
     position: absolute;
     left: 18px;
-    top: -45`px;
+    top: -45px;
     width: clamp(30px, 5vw, 150px);
     height: auto;
     transform: translateX(30px);
