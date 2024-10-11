@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Geist';
+    src: url('../assets/font/Geist/Geist-ExtraBold.woff2');
+    font-weight: 800;
+    font-style: extrabold;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url('../assets/font/Geist/Geist-Medium.woff2');
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url('../assets/font/Geist/Geist-Light.woff2');
+    font-weight: 300;
+    font-style: light;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* NAVBAR SECTION */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background: #fffceb;
+    border-bottom: 1px solid #C53338;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%
+}
+
+.navbar.sticky {
+    background: #C53338;
+    padding: 5px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.sticky .logoname a,
+.navbar.sticky .icon,
+.navbar.sticky ul li a {
+    color: #ffffff;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img {
+    position: relative;
+    width: 78px;
+    height: 79px;
+}
+
+.navbar .logoname a {
+    color: #C53338;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+    /*makes nav align horizontally*/
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.navbar a.active {
+    font-weight: 700;
+}
+
+.icon {
+    color: #C53338;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/*Edit Page links*/
+.menu-list li a {
+    color: #C53338;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+    font-weight: 700;
+}
+
+/*END NAVBAR*/
+
+body {
+    background-color: #fffceb;
+}
+
+/* SCROLL BAR EDITS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C53338;
+}
+
+/*BG for Each Page*/
+.bgHome {
+    background-image: url("../assets/gen/bgpattern.png");
+    background-repeat: repeat;
+}
+
+.bgServices {
+    background-color: #fffceb;
+}
+
+/*FOR NAVBAR RESPONSIVE*/
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 914px) {
+    body.disabled {
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbar .menu-list {
+        position: fixed;
+        border: 2px solid black;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        justify-content: center;
+        text-align: center;
+        background: #F6F1D4;
+        transition: all 0.3s ease;
+    }
+
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+
+    .navbar .menu-list li {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .navbar .menu-list li a {
+        font-size: 23px;
+        font-weight: 700;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar .logo a {
+        font-size: 27px;
+    }
+}
+
+/*END OF NAVBAR*/
+
+.italic {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.bold {
+    font-style: extrabold;
+}
+
+.light {
+    font-style: light;
+}
