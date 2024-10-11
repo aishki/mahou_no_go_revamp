@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Geist';
 }
 
 
@@ -233,9 +233,9 @@ body {
 }
 
 .bold {
-    font-style: extrabold;
+    font-weight: 800;
 }
 
 .light {
-    font-style: light;
+    font-weight: light;
 }
