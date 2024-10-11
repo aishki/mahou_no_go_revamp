@@ -55,14 +55,12 @@
     height: auto;
 }
 
+/* SPARKLES */
+
 .sparkle {
-    z-index: 15;
+    z-index: 101;
     width: 50px;
     height: auto;
-}
-
-.sparkle:hover {
-    animation: skew 2s ease-in-out infinite;
 }
 
 .sparkle1 {
@@ -73,6 +71,49 @@
 .sparkle2 {
     top: 200px;
     left: 50px;
+}
+
+/* SPARKLE FOR SERVICES */
+.sparkle3 {
+    top: 550px;
+    left: 300px;
+    transform: rotate(-30deg);
+}
+
+.sparkle4 {
+    bottom: 550px;
+    left: 250px;
+    transform: scale(0.7) rotate(30deg);
+}
+
+.sparkle5 {
+    width: 45px;
+    bottom: 80px;
+    right: 45vw;
+}
+
+.sparkle6 {
+    width: 55px;
+    bottom: 450px;
+    right: 100px;
+}
+
+/* SPARKLE POWER */
+
+.sparkle1:hover, .sparkle2:hover {
+    animation: skew 2s ease-in-out infinite;
+}
+
+.sparkle3:hover {
+    animation: shrink-grow-neg 3s ease-in-out infinite;
+}
+
+.sparkle4:hover {
+    animation: shrink-grow-pos 3s ease-in-out infinite;
+}
+
+.sparkle5:hover, .sparkle6:hover {
+    animation: shrink-grow 3s ease-in-out infinite;
 }
 
 .temple {
@@ -94,6 +135,7 @@
 /* SERVICES CONTAINER */
 .services-container {
     position: relative;
+    height: 250vh;
 }
 
 .service-header {
@@ -120,6 +162,20 @@
     height: 60vh;
 }
 
+.sushi {
+    right: 0px;
+    top: 60vh;
+    z-index: 55;
+    height: 40vh;
+}
+
+.maki {
+    right: 0px;
+    top: 110vh;
+    z-index: 55;
+    height: 60vh;
+}
+
 .round-sushi {
     left: -25vh;
     top: 35vh;
@@ -128,9 +184,15 @@
 }
 
 .c-red-waves {
-    height: 50vh;
+    height: 100vh;
     bottom: 0;
     left: 0;
+}
+
+.c-blue-waves {
+    height: 80vh;
+    bottom: 0;
+    right: 0;
 }
 
 /* SERVICES DETAILS CONTAINER */
@@ -216,5 +278,47 @@
 
     100% {
         transform: rotate(0);
+    }
+}
+
+@keyframes shrink-grow {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes shrink-grow-neg {
+    0% {
+        transform: rotate(-30deg) scale(1, 1);
+    }
+
+    50% {
+        transform: rotate(-30deg) scale(0);
+    }
+
+    100% {
+        transform: rotate(-30deg) scale(1, 1);
+    }
+}
+
+@keyframes shrink-grow-pos {
+    0% {
+        transform: rotate(30deg) scale(1, 1);
+    }
+
+    50% {
+        transform: rotate(30deg) scale(0);
+    }
+
+    100% {
+        transform: rotate(30deg) scale(1, 1);
     }
 }
