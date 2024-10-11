@@ -1,0 +1,220 @@
+.about-us-container {
+    position: relative;
+    height: 100vh
+}
+
+.about-us-text {
+    top: 150px;
+    position: absolute;
+    width: 350px;
+    right: 150px;
+    text-align: justify;
+}
+
+.aboutUs-title {
+    position: absolute;
+    font-family: 'Geist', sans-serif;
+    animation: riseFall 10s ease-in-out infinite;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    color: #fffceb;
+    top: 190px;
+    left: 380px;
+    z-index: 50;
+}
+
+.aboutUs {
+    font-size: clamp(2rem, 2.7vw, 5rem);
+}
+
+
+.description {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #C53338;
+}
+
+.service-bg {
+    position: absolute;
+}
+
+.redsmoke {
+    bottom: 0;
+    right: 100px;
+    z-index: 2;
+    width: 600px;
+    height: auto;
+}
+
+.suncloud {
+    top: 150px;
+    left: 200px;
+    z-index: 2;
+    animation: riseFall 10s ease-in-out infinite;
+    width: 600px;
+    height: auto;
+}
+
+.sparkle {
+    z-index: 15;
+    width: 50px;
+    height: auto;
+}
+
+.sparkle:hover {
+    animation: skew 2s ease-in-out infinite;
+}
+
+.sparkle1 {
+    bottom: 10px;
+    right: 750px;
+}
+
+.sparkle2 {
+    top: 200px;
+    left: 50px;
+}
+
+.temple {
+    bottom: -220px;
+    left: -100px;
+    z-index: 10;
+    width: 500px;
+    height: auto;
+}
+
+.bannertitle {
+    bottom: 30px;
+    left: 400px;
+    z-index: 10;
+    width: 250px;
+    height: auto;
+}
+
+/* SERVICES CONTAINER */
+.services-container {
+    position: relative;
+}
+
+.service-header {
+    font-size: 100px;
+    top: 160px;
+    left: 150px;
+    font-family: 'Geist';
+    text-transform: uppercase;
+    -webkit-text-stroke: #fffceb 2px;
+    paint-order: stroke fill;
+    color: transparent;
+    z-index: 100;
+}
+
+.red-wave1 {
+    z-index: 50;
+    height: 90vh;
+}
+
+.red-wave2 {
+    top: -20px;
+    right: 0;
+    z-index: 25;
+    height: 60vh;
+}
+
+.round-sushi {
+    left: -25vh;
+    top: 35vh;
+    z-index: 55;
+    height: 50vh;
+}
+
+.c-red-waves {
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+}
+
+/* SERVICES DETAILS CONTAINER */
+.services-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 99vw;
+    top: 60vh;
+    z-index: 100;
+    color: #C53338;
+    font-family: 'Geist';
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    gap: 60px;
+    width: 40vw;
+    margin-bottom: 80px;
+}
+
+.services-details-container p {
+    font-size: 18px;
+    width: 20vw;
+}
+
+.services-details-container h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+@keyframes riseFall {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes circularMotion {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(10px, 0px);
+    }
+
+    50% {
+        transform: translate(10px, 10px);
+    }
+
+    75% {
+        transform: translate(0px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes skew {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
