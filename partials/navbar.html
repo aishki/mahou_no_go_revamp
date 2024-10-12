@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="content">
     <div class="logo">
-      <img src="../assets/nav/logo.png" />
+      <div id="logo-placeholder" class="logo-asset"></div>
       <div class="logoname">
         <a href="../aboutUs.html">Mahou no Go</a>
       </div>
@@ -22,3 +22,31 @@
     </div>
   </div>
 </nav>
+
+<script>
+  // Get the current page's pathname
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Define the logo to fetch based on the current page
+  let logoPath;
+
+  if (
+    currentPage === "index.html" ||
+    currentPage === "aboutUs.html" ||
+    currentPage === "services.html"
+  ) {
+    logoPath = "../assets/nav/black-red-logo.html"; // Fetch for Home, About Us, Services
+  } else if (currentPage === "menu.html") {
+    logoPath = "../assets/nav/black-white-logo.html"; // Fetch for Menu
+  }
+
+  // Fetch the logo if a valid logoPath is set
+  if (logoPath) {
+    fetch(logoPath)
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("logo-placeholder").innerHTML = data;
+      })
+      .catch((error) => console.error("Error fetching logo:", error));
+  }
+</script>

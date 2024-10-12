@@ -1,0 +1,146 @@
+/*FOOTER */
+.RedFooter {
+  position: absolute;
+  width: 100vw;
+  background: #C53338;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #FFFFFF;
+  margin: 20px;
+}
+
+.column h3 {
+  margin-bottom: 1.3vw;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.column li {
+  margin-bottom: .7vw;
+}
+
+.watermark {
+  color: #C4C4C4;
+  font-weight: 500;
+  font-size: .9vw;
+}
+
+/* SOCIALS */
+.socials {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.socials:hover {
+  scale: 1.1;
+}
+
+.social-row {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.5em 0;
+}
+
+/* CARD 1 */
+.card1 {
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+}
+
+.card1:hover {
+  background-color: #cc39a4;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+/* CARD 2 */
+.card2 {
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+}
+
+.card2:hover {
+  background-color: #03A9F4;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+/* CARD 3 */
+.card3 {
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+}
+
+.card3:hover {
+  background-color: #8c9eff;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card3:hover .discord {
+  fill: white;
+}
+
+/* CARD 4 */
+.card4 {
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+}
+
+.card4:hover {
+  background-color: #8c9eff;
+}
+
+.linkedin {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #0077b5;
+}
+
+.card4:hover .linkedin {
+  fill: white;
+}
