@@ -1,0 +1,82 @@
+  <head>
+    <style>
+      .logo-container {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Top half ellipse (white) */
+      .top-ellipse {
+        position: absolute;
+        width: 115%;
+        height: 55%;
+        background-color: #FFFFFF;
+        border-radius: 55px 55px 0 0;
+        top:-5%;
+      }
+
+      /* Bottom half ellipse (black) */
+      .bottom-ellipse {
+        position: absolute;
+        width: 115%;
+        height: 55%;
+        background-color: #2f302f;
+        border-radius: 0 0 55px 55px;
+        top: 55%;
+      }
+
+      /* Rectangle for bowl */
+      .bowl-rectangle {
+        position: absolute;
+        width: 40%;
+        height: 10%;
+        background-color: #2f302f;
+        top: 105%;
+        border-radius: 0 0 3px 3px; 
+      }
+
+      /* Chopsticks */
+      .chopsticks1 {
+        position: absolute;
+        width: 0;
+        height: 80%;
+        background-color: transparent;
+        border-left: 0.2vw solid #2f302f; /* Thicker part */
+        border-right:  0.125vw solid #2f302f; /* Thinner part */
+        border-radius: 15px 15px 50px 50px;
+        transform: rotate(45deg);
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 20% 100%);
+        top: -20%;
+        left: 80%;
+      }
+
+      .chopsticks2 {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 80%;
+        background-color: transparent;
+        border-left: 0.2vw solid #2f302f; /* Thicker part */
+        border-right:  0.125vw solid #2f302f; /* Thinner part */
+        border-radius: 15px 15px 50px 50px;
+        transform: rotate(35deg);
+        top: -28%;
+        left: 72%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 20% 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-container">
+      <div class="top-ellipse"></div>
+      <div class="bottom-ellipse"></div>
+      <div class="bowl-rectangle"></div>
+      <div class="chopsticks1"></div>
+      <div class="chopsticks2"></div>
+    </div>
+  </body>
+</html>

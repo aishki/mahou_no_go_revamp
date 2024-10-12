@@ -196,17 +196,6 @@
     transform: translateX(-0.75px);
 }
 
-
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 /* BG Tint */
 .background-tint {
     background-color: rgba(255, 238, 205, 0.625);
@@ -405,10 +394,22 @@
     -webkit-text-stroke: #C53338 2px;
     paint-order: stroke fill;
     color: transparent;
+    cursor: pointer;
+}
+
+.r-stroke:hover {
+    color: #C53338;
 }
 
 .r-fill {
     color: #C53338;
+    cursor: pointer;
+}
+
+.r-fill:hover {
+    -webkit-text-stroke: #C53338 2px;
+    paint-order: stroke fill;
+    color: transparent;
 }
 
 .position-container {
@@ -424,7 +425,7 @@
     transform: translateX(30px);
 }
 
-/*FOR NAVBAR RESPONSIVE*/
+/*FOR HOME RESPONSIVE*/
 @media (max-width: 1230px) {
     .redsun {
         top: 100px;

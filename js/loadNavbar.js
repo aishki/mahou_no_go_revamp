@@ -9,12 +9,16 @@ $(function () {
       }
     });
 
-    const currentPath = window.location.pathname.split("/").pop() || "home"; // Default to 'home' if path is empty
+    const currentPath =
+      window.location.pathname.split("/").pop() || "index.html"; // def to 'index.html' if path is empty
     const navLinks = document.querySelectorAll(".navbar a");
 
     navLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href").split("/").pop(); // Get the href's file name
-      if (linkPath === currentPath) {
+      const linkPath = link.getAttribute("href").split("/").pop(); // getter
+      if (
+        linkPath === currentPath ||
+        (currentPath === "index.html" && linkPath === "home.html")
+      ) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");

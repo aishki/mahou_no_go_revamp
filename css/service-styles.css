@@ -204,12 +204,13 @@
     top: 130vh;
     left: -15px;
     animation: circularMotion 5s ease-in-out infinite;
+    animation-direction: reverse;
 }
 
 .cpx3 {
     z-index: 50;
     top: 107.5vh;
-    left: 20px;
+    left: 15px;
     animation: circularMotion 4s ease-in-out infinite;
 }
 
