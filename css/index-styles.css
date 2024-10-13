@@ -398,6 +398,7 @@
 }
 
 .r-stroke:hover {
+    transition: all 0.3s ease;
     color: #C53338;
 }
 
@@ -407,6 +408,7 @@
 }
 
 .r-fill:hover {
+    transition: all 0.3s ease;
     -webkit-text-stroke: #C53338 2px;
     paint-order: stroke fill;
     color: transparent;
