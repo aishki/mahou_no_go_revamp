@@ -46,101 +46,91 @@
 }
 
 /* SOCIALS */
-.socials {
-  width: 90px;
-  height: 90px;
-  outline: none;
-  border: none;
-  transition: .2s ease-in-out;
-  cursor: pointer;
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
 }
 
-.socials:hover {
-  scale: 1.1;
-}
-
-.social-row {
+.wrapper .icon {
+  z-index: 10;
+  position: relative;
+  background: #fff;
+  color: #C53338;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
   display: flex;
-  gap: 0.5em;
-  margin: 0.5em 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* CARD 1 */
-.card1 {
-  background: white;
-  border-radius: 90px 5px 5px 5px;
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.card1:hover {
-  background-color: #cc39a4;
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.instagram {
-  margin-top: 1.5em;
-  margin-left: 1.2em;
-  fill: #cc39a4;
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-.card1:hover .instagram {
-  fill: white;
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* CARD 2 */
-.card2 {
-  background: white;
-  border-radius: 5px 90px 5px 5px;
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
 }
 
-.card2:hover {
-  background-color: #03A9F4;
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
 }
 
-.facebook {
-  margin-top: 1.5em;
-  margin-left: -.9em;
-  fill: #03A9F4;
-}
-
-.card2:hover .facebook {
-  fill: white;
-}
-
-/* CARD 3 */
-.card3 {
-  background: white;
-  border-radius: 5px 5px 5px 90px;
-}
-
-.card3:hover {
-  background-color: #8c9eff;
-}
-
-.discord {
-  margin-top: -0.9em;
-  margin-left: -1.2em;
-  fill: #8c9eff;
-}
-
-.card3:hover .discord {
-  fill: white;
-}
-
-/* CARD 4 */
-.card4 {
-  background: white;
-  border-radius: 5px 5px 90px 5px;
-}
-
-.card4:hover {
-  background-color: #8c9eff;
-}
-
-.linkedin {
-  margin-top: 1.5em;
-  margin-left: -0.9em;
-  fill: #0077b5;
-}
-
-.card4:hover .linkedin {
-  fill: white;
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #cc39a4;
+  color: #fff;
 }
