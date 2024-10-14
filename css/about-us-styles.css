@@ -5,7 +5,9 @@
 }
 
 .about-us-page-container {
-    height: 100vh;
+    position: relative;
+    height: 100%;
+    margin-bottom: 110px;
 }
 
 .abt-us-logo-container {
