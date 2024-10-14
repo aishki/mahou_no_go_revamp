@@ -1,0 +1,241 @@
+.bgAboutUs {
+    background-image: url("../assets/gen/redbgpattern.png");
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+.about-us-page-container {
+    height: 100vh;
+}
+
+.abt-us-logo-container {
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+
+    div {
+        width: 100vw;
+    }
+}
+
+.about-us-logo {
+    top: 10vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 70vh;
+    height: auto;
+    animation: riseFall 5s linear infinite;
+    z-index: 2;
+}
+
+.x1 {
+    top: 10vh;
+    left: 10vh;
+    -webkit-animation: riseFall 2s linear infinite;
+    -moz-animation: riseFall 2s linear infinite;
+    animation: riseFall 2s linear infinite;
+    position: relative;
+
+}
+
+.x2 {
+    top: -15vh;
+    left: 125vh;
+    -webkit-animation: riseFall 2.5s linear infinite;
+    -moz-animation: riseFall 2.5s linear infinite;
+    animation: riseFall 2.5s linear infinite;
+    position: relative;
+
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.x3 {
+    top: -15vh;
+    left: 130vh;
+    -webkit-animation: riseFall 2s linear infinite;
+    -moz-animation: riseFall 2s linear infinite;
+    animation: riseFall 2s linear infinite;
+    position: relative;
+}
+
+.x3 .cloud {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.x4 {
+    left: 40vh;
+    top: -30vh;
+    -webkit-animation: riseFall 3s linear infinite;
+    -moz-animation: riseFall 3s linear infinite;
+    animation: riseFall 3s linear infinite;
+    position: relative;
+
+}
+
+.cloud {
+    height: auto;
+    position: relative;
+}
+
+/* Clouds behind the logo */
+.x1, .x3 {
+    z-index: 3;
+}
+
+/* Clouds in front of the logo */
+.x2, .x4 {
+    z-index: 1;
+}
+
+h1 {
+    text-transform: uppercase;
+    z-index: 10;
+    bottom: 2vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    letter-spacing: -0.5rem;
+    font-weight: 800;
+}
+
+.abt-us-title {
+    font-size: clamp(1rem, 15vw, 10rem);
+    text-align: center;
+}
+
+.abt-us-content {
+    top: 20vh;
+    position: relative;
+    height: 320vh;
+}
+
+.track-container {
+    position: absolute;
+}
+
+.track-star {
+    left: 0;
+    right: 0;
+    width: 100%;
+    animation: riseFall 5s linear infinite;
+    z-index: 2;
+}
+
+.m1, .m2, .m3 {
+    position: absolute;
+    z-index: 30;
+    color: #fffceb;
+}
+
+.m1 p, .m2 p, .m3 p {
+    font-size: 17px;
+}
+
+.member {
+    font-size: clamp(1rem, 10vw, 6rem);
+    line-height: 6rem;
+    position: relative;
+}
+
+.m1 {
+    text-align: left;
+    left: 10vw;
+    top: 30vh;
+}
+
+.m2 {
+    text-align: right;
+    right: 20vw;
+    top: 120vh;
+}
+
+.m3 {
+    text-align: left;
+    left: 20vw;
+    bottom: 50vh;
+}
+
+.m1 p {
+    width: 60vw;
+}
+
+.m2 p {
+    width: 50vw;
+}
+
+.m3 p {
+    width: 45vw;
+}
+
+.abt-us-bg {
+    position: absolute;
+}
+
+.c-white-waves {
+    height: 80vh;
+    bottom: 0;
+    right: 0;
+}
+
+.characters {
+    z-index: -10;
+    height: 240vh;
+    left: 0;
+}
+
+.cloud4 {
+    top: 25vh;
+    right: 2vw;
+    height: auto;
+
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.cloud5 {
+    top: 140vh;
+    left: -5vw;
+
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+
+/* SPARKLES!!@ */
+.sparkle {
+    z-index: 101;
+    width: 100px;
+    height: auto;
+}
+
+.wsparkle1 {
+    width: 100px;
+    top: 120vh;
+    left: 20vw;
+}
+
+.wsparkle2 {
+    width: 50px;
+    bottom: 70vh;
+    right: 20vw;
+}
+
+/* SPARKLE POWER */
+.wsparkle1 {
+    animation: shrink-grow 2s ease-in-out infinite;
+}
+
+.wsparkle2 {
+    animation: shrink-grow 2s ease-in-out infinite;
+}

@@ -1,3 +1,7 @@
+body {
+    background-color: #fffceb;
+}
+
 .about-us-container {
     position: relative;
     height: 100vh

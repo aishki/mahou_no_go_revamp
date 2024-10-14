@@ -39,6 +39,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .navbar .content {
@@ -122,9 +126,7 @@
 
 /*END NAVBAR*/
 
-body {
-    background-color: #fffceb;
-}
+
 
 /* SCROLL BAR EDITS */
 ::-webkit-scrollbar {
@@ -147,6 +149,10 @@ body {
 
 .bgServices {
     background-color: #fffceb;
+}
+
+.bgAboutUs {
+    background-color: #C53338;
 }
 
 /*FOR NAVBAR RESPONSIVE*/
@@ -239,6 +245,35 @@ body {
 }
 
 /* ANIMATIONS */
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
 
 @keyframes moveLeft {
     0% {

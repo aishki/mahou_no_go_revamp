@@ -70,3 +70,7 @@ productBoxes.forEach((box, index) => {
     }, 50);
   });
 });
+
+$(function () {
+  $("#black-white-logo").load("../assets/nav/black-white-logo.html");
+});
